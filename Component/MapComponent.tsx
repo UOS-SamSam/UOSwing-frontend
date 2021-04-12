@@ -137,16 +137,18 @@ const MapComponent = () => {
 							}}
 						/>
 					}
-				</MapView>
-				{
-					locationInfo &&
-					<View style={Map.info}>
-						<Text style={{textAlign: "center"}}>😅 학교 내에 있지 않으시군요!</Text>
-					</View>
-				}
-				<MapWidget
-					getMyPosition={getMyPosition}
-				/>
+			</MapView>
+			{
+				locationInfo &&
+				<View style={Map.info}>
+					<Text style={{textAlign: "center"}}>😅 학교 내에 있지 않으시군요!</Text>
+				</View>
+			}
+			<MapWidget
+				getMyPosition={getMyPosition}
+			/>
+			{
+				user.auth === "user" &&
 				<TouchableHighlight
 					style={Map.alert}
 					onPress={handleReportOpen}
@@ -160,6 +162,7 @@ const MapComponent = () => {
 						<Text style={{ fontSize: 18 }}>신고하기</Text>
 					</ButtonComponent>
 				</TouchableHighlight>
+			}
 			</View>
 			<Modal
 				view={reportModal}
