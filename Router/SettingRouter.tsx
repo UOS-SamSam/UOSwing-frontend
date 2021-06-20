@@ -35,6 +35,7 @@ export type SettingStackParamList = {
 	}
 };
 
+// setting 화면과 헤더를 내보내는곳
 const SettingRouter = ( { navigation }: Props) => {
 	const settingAddress = usePadBoxAddress();
 	const saveSetting = useSavePadBox();

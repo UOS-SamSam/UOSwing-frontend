@@ -25,6 +25,7 @@ export type NoticeStackParamList = {
 	}
 };
 
+// notice 탭의 화면과 헤더를 내보내는 곳
 const NoticeRouter = ({ navigation }: Props) => {
 	const a = 1;
 	return (

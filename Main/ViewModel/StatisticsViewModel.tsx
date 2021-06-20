@@ -9,6 +9,7 @@ import { useHeader, useUserLogin, useUserState } from '../Model/UserModel';
 
 const GetStatisticsContext = createContext<(period : number) => void>((period : number)=>{});
 
+// 통계 모델 콘트롤러
 export const StatisticsLogicProvider = ({ children } : childrenObj) => {
 	const weekDispatch = useStatisticsWeekDispatch();
 	const monthDispatch = useStatisticsMonthDispatch();

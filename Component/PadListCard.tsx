@@ -27,7 +27,7 @@ type Props = {
 	modalOpen: () => void;
 }
 
-// 생리대 함 카드 컴포넌트
+// 생리대 함 마커를 눌렀을 때 뜨는 카드 컴포넌트
 const PadListCard = ({ name, address, padAmount, humidity, temperature, isReported, index, modalOpen}: Props) => {
 	const user=useUserState();
 	return (

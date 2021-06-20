@@ -1,3 +1,5 @@
+// 타입 지정하는 파일
+
 export type noticeType = {
 	id: number,
 	title: string,

@@ -10,6 +10,7 @@ import { useNoticeState, useNoticeDispatch } from '../Model/NoticeModel';
 const SaveNoticeContext = createContext<(id: number, title: string, content : string)=> void>((id: number, title: string, content : string) => {});
 const DeleteNoticeContext = createContext<(id: number)=> void>((id: number) => {});
 
+// 공지 모델 컨트롤러
 export const NoticeLogicProvider = ({ children } : childrenObj) => {
 	const notice = useNoticeState();
 	const noticeDispatch = useNoticeDispatch();

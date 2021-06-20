@@ -13,6 +13,7 @@ import { useGetPadBox } from './PadBoxViewModel';
 const SaveReportContext = createContext<(id: number, tag: string, content: string, padBoxId: number)=> void>((id: number, tag: string, content : string, padBoxId: number) => {});
 const DeleteReportContext = createContext<(id: number)=> void>((id: number) => {});
 
+// 공지 모델 컨트롤러
 export const ReportLogicProvider = ({ children } : childrenObj) => {
 	const report = useReportState();
 	const fetchPadBox = useGetPadBox();
