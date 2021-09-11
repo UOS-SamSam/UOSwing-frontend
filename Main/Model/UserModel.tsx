@@ -21,7 +21,7 @@ export const UserContextProvider = ({ children }: childrenObj) => {
 	const login = async (key: string): boolean => {
 		// 관리자 로그인
 		const status = await axios.post(`${API_URL}/api/v1/admin/login`, {
-			"email": "samsam-uos@gmail.com",
+			"email": "admin@gmail.com",
 			"password": key
 		})
 			.then(res => {
