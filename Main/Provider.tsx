@@ -4,6 +4,7 @@ import { NoticeContextProvider, PadBoxContextProvider, StatisticsContextProvider
 import { MainRouter } from '../Router';
 import { ReportContextProvider } from './Model/ReportModel';
 
+// model 폴더의 파일들과 viewmodel폴더의 파일들, view 내보내는 부분
 const Provider = () => {
 	const a = 1;
 	return (

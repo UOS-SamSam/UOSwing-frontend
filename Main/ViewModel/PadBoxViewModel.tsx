@@ -29,6 +29,7 @@ const SavePadBoxContext = createContext<(
 		name: string,) => {});
 const DeletePadBoxContext = createContext<(id:number)=> void>((id:number) => {});
 
+// 생리대함 모델 컨트롤러
 export const PadBoxLogicProvider = ({ children } : childrenObj) => {
 	const padBox = usePadBoxState();
 	const padBoxDispatch = usePadBoxDispatch();

@@ -23,7 +23,7 @@ type Props = {
 	handleReportOpen: (idx : number, name : string, address : string) => void
 }
 
-// 생리대 함 리스트 모달
+// 생리대 함 마커를 눌렀을 때 뜨는 생리대 함 리스트 모달
 const PadListModal : React.FC<Props> = ({listModal, handleListClose, address, handleReportOpen}) => {
 	// reportPos는 현재 내가 누른 component(padbox)의 id임
 	const padBoxState = usePadBoxState();

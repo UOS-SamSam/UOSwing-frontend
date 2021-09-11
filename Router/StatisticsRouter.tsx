@@ -6,6 +6,7 @@ import StatisticsIcon from '../assets/bar-chart.svg';
 
 const Stack = createStackNavigator();
 
+// 통계 화면을 내보내는 곳
 const StatisticsRouter = () => {
 	return (
 		<Stack.Navigator screenOptions={{
