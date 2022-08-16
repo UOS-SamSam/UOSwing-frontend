@@ -35,7 +35,7 @@ const Modal : React.FC<Props> = ({children, view, onClose, title}) => {
 					</TouchableHighlight>
 				</View>
 				<View>
-				{children}
+					{children}
 				</View>
 			</View>
 		</View>
@@ -65,6 +65,7 @@ const ModalStyle = StyleSheet.create({
 		zIndex: 12,
 		backgroundColor: "white",
 		padding: 20,
+		paddingBottom: 0,
 		shadowColor: "#000",
 		shadowOffset: {
 			width: 0,
